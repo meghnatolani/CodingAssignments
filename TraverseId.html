@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const obj = [{
+  id: "A",
+  children: [{
+    id: "B",
+    children: [{
+      id: "C",
+      children: [{
+        id: "D",
+        children: [{
+          id: "E",
+          children: [{
+            id: "F"
+          }]
+        }]
+      }, {
+        id: "G",
+        children: {
+          id: "H"
+          
+        }
+      }]
+    }, {
+      id: "I"
+    }]
+  }, {
+    id: "J",
+    children: [{
+      id: "K"
+    }]
+  }]
+}, {
+  id: "L"
+}, {
+  id: "M",
+  children: {
+    id: "N",
+    children: [{
+      id: "O"
+    }]
+  }
+}, {
+  id: "P"
+}];
+
+
+function getLeaf(obj) {
+	
+	if(obj instanceof Array)
+	{
+		for(var i=0;i<obj.length;i++){ 
+			if(obj[i].id){
+				document.write(obj[i].id+"<br>");
+			}
+			if(obj[i].children) {
+				getLeaf(obj[i].children);
+			}
+		}
+	}
+	else{
+		var length=Object.keys(obj).length;
+		document.write(obj.id+"<br>");
+		if(obj.children) getLeaf(obj.children);
+	}
+  }
+
+
+
+getLeaf(obj);
+</script>
+
+</body>
+</html>
