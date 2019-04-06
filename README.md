@@ -5,11 +5,7 @@ Coding assignments done as part of practice
 
 TicTacToe.java -> NxN TicTacToe which randomly generates a board and checks if there is a winner or not.
 
-ArraySpiral.java -> Traverse the array spirally.
-1 2 3
-4 5 6
-7 8 9
-Output -> 1 2 3 6 9 8 7 4 5
+ArraySpiral.java -> Traverse an array spirally.
 
 TraverseId.html -> JavaScript code to recursively parse and print all the IDs in console.
 
