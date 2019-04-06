@@ -14,7 +14,7 @@ Button.html -> Display a text after hiding the button, using JQuery.
 StringFunction.java -> This class contains method which checks if any of the strings have a valid input or not.
  If input is not valid empty string is returned.
  
-VirtualTriange.java -> A Java Program to create a 2 dimensional virtual triangle and check if a point falls
+VirtualTriangle.java -> A Java Program to create a 2 dimensional virtual triangle and check if a point falls
 inside it.
 
 
